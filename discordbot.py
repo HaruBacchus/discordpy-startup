@@ -56,5 +56,9 @@ async def play(ctx):
     voice_client.play(ffmpeg_audio_source)
 
     await ctx.send("再生しました。")
+    
+@bot.command()
+async def ping(ctx):
+    await ctx.send('pong')
 
 bot.run(token)
